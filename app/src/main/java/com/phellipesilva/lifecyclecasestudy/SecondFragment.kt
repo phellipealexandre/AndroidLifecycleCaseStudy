@@ -1,4 +1,4 @@
-package com.phellipesilva.lifecyclestudycase
+package com.phellipesilva.lifecyclecasestudy
 
 import android.content.Context
 import android.content.Intent
@@ -14,23 +14,23 @@ class SecondFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        Log.d("LifecycleStudyCase", "Second Fragment onAttach")
+        Log.d("LifecycleCaseStudy", "Second Fragment onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("LifecycleStudyCase", "Second Fragment onCreate")
+        Log.d("LifecycleCaseStudy", "Second Fragment onCreate")
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_second, container, false)
-        Log.d("LifecycleStudyCase", "Second Fragment onCreateView")
+        Log.d("LifecycleCaseStudy", "Second Fragment onCreateView")
         return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        Log.d("LifecycleStudyCase", "Second Fragment onActivityCreated")
+        Log.d("LifecycleCaseStudy", "Second Fragment onActivityCreated")
 
         openTransparentActivityButton.setOnClickListener {
             startActivity(Intent(context, TransparentActivity::class.java))
@@ -39,36 +39,36 @@ class SecondFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        Log.d("LifecycleStudyCase", "Second Fragment onStart")
+        Log.d("LifecycleCaseStudy", "Second Fragment onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("LifecycleStudyCase", "Second Fragment onResume")
+        Log.d("LifecycleCaseStudy", "Second Fragment onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("LifecycleStudyCase", "Second Fragment onPause")
+        Log.d("LifecycleCaseStudy", "Second Fragment onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("LifecycleStudyCase", "Second Fragment onStop")
+        Log.d("LifecycleCaseStudy", "Second Fragment onStop")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d("LifecycleStudyCase", "Second Fragment onDestroyView")
+        Log.d("LifecycleCaseStudy", "Second Fragment onDestroyView")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("LifecycleStudyCase", "Second Fragment onDestroy")
+        Log.d("LifecycleCaseStudy", "Second Fragment onDestroy")
     }
 
     override fun onDetach() {
         super.onDetach()
-        Log.d("LifecycleStudyCase", "Second Fragment onDetach")
+        Log.d("LifecycleCaseStudy", "Second Fragment onDetach")
     }
 }

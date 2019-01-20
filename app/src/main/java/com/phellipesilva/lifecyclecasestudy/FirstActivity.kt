@@ -1,4 +1,4 @@
-package com.phellipesilva.lifecyclestudycase
+package com.phellipesilva.lifecyclecasestudy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,38 +12,37 @@ class FirstActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first)
 
         val bundleState = if (savedInstanceState == null) "null" else "bundle"
-        Log.i("LifecycleStudyCase", "First Activity onCreate($bundleState)")
+        Log.i("LifecycleCaseStudy", "First Activity onCreate($bundleState)")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("LifecycleStudyCase", "First Activity onStart")
-        finish()
+        Log.i("LifecycleCaseStudy", "First Activity onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i("LifecycleStudyCase", "First Activity onResume")
+        Log.i("LifecycleCaseStudy", "First Activity onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.i("LifecycleStudyCase", "First Activity onPause")
+        Log.i("LifecycleCaseStudy", "First Activity onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i("LifecycleStudyCase", "First Activity onStop")
+        Log.i("LifecycleCaseStudy", "First Activity onStop")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.i("LifecycleStudyCase", "First Activity onRestart")
+        Log.i("LifecycleCaseStudy", "First Activity onRestart")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i("LifecycleStudyCase", "First Activity onDestroy")
+        Log.i("LifecycleCaseStudy", "First Activity onDestroy")
     }
 
     override fun onSaveInstanceState(outState: Bundle?, outPersistentState: PersistableBundle?) {
@@ -51,13 +50,13 @@ class FirstActivity : AppCompatActivity() {
 
         val bundleState = if(outState == null) "null" else "bundle"
         val persistableBundleState = if(outPersistentState == null) "null" else "persistableBundle"
-        Log.i("LifecycleStudyCase", "First Activity onSaveInstanceState($bundleState, $persistableBundleState)")
+        Log.i("LifecycleCaseStudy", "First Activity onSaveInstanceState($bundleState, $persistableBundleState)")
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         super.onRestoreInstanceState(savedInstanceState)
 
         val bundleState = if(savedInstanceState == null) "null" else "bundle"
-        Log.i("LifecycleStudyCase", "First Activity onRestoreInstanceState($bundleState)")
+        Log.i("LifecycleCaseStudy", "First Activity onRestoreInstanceState($bundleState)")
     }
 }

@@ -1,4 +1,4 @@
-package com.phellipesilva.lifecyclestudycase
+package com.phellipesilva.lifecyclecasestudy
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.phellipesilva.lifecyclestudycase", appContext.packageName)
+        assertEquals("com.phellipesilva.lifecyclecasestudy", appContext.packageName)
     }
 }

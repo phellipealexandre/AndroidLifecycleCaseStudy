@@ -1,4 +1,4 @@
-package com.phellipesilva.lifecyclestudycase
+package com.phellipesilva.lifecyclecasestudy
 
 import org.junit.Test
 
