@@ -19,7 +19,7 @@ To learn about the Android lifecycle behaviour. I followed this example:
 * The user presses back, removing the second activity from the top of the stack
 * The user presses back, leaving the app
 
-All the knowledge learned will be published in a Medium post afterwards.
+All the knowledge learned is published in this [Medium post](https://medium.com/@phellipealexandre/ciclo-de-vida-no-android-um-estudo-de-caso-65d59398ab6f) (just in portuguese for now).
 
 ## Considerations
 Fell free to use this repository in the way you want. Happy studies!
